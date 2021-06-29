@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra, Papel o Tijeras</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="shorcut icon" type="image.png" href="./img/icon.png" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- contenedor de juego -->
+      <div id="gameContainer">
+        <div id="title">
+          <h1>Piedra, Papel o tijeras</h1>
+        </div>
+        <!-- iu del juego -->
+        <div id="game">
+          <div id="oponent">
+            <h2 id="oponentState">Tu oponente está eligiendo</h2>
+            <div id="loadingPoints">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- caja donde se muestran los resultados -->
+          <div id="gameDisplay">
+            <div id="appElection">
+              <div id="appRock" class="show">
+                <img src="./img/piedra.png" />
+              </div>
+
+              <div id="appPaper" class="show">
+                <img src="./img/paper.png" />
+              </div>
+
+              <div id="appScissors" class="show">
+                <img src="./img/tijeras.png" />
+              </div>
+            </div>
+
+            <!-- when event toggle displaySetting to "table" -->
+            <div id="vs"><h2>VS</h2></div>
+            <div id="wait">
+              <h2>Esperando a que los participantes elijan</h2>
+              <div id="clock">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <div id="userElection">
+              <div id="userRock" class="show">
+                <img src="./img/piedra.png" />
+              </div>
+
+              <div id="userPaper" class="show">
+                <img src="./img/paper.png" />
+              </div>
+
+              <div id="userScissors" class="show">
+                <img src="./img/tijeras.png" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Iu interactiva -->
+          <div id="playerIU">
+            <div id="instruction">
+              <h2>Elige con que atacar</h2>
+            </div>
+            <div id="player">
+              <div id="piedra" class="hover">
+                <img src="./img/piedra.png" />
+              </div>
+              <div id="papel" class="hover">
+                <img src="./img/paper.png" />
+              </div>
+              <div id="tijeras" class="hover">
+                <img src="./img/tijeras.png" />
+              </div>
+              <div id="reset">
+                <p>Reintentar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
